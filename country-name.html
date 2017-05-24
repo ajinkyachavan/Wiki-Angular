@@ -1,0 +1,24 @@
+<iframe width="1000px" height="800px" style="float:right;" src="" name="iframe_a">
+<p>Your browser does not support iframes.</p>
+</iframe>
+
+<ul>
+    <li ng-repeat="country in countries">
+
+        <a target="iframe_a" href="https://en.wikipedia.org/wiki/{{country.name}}">{{country.name}}</a>
+    </li>
+</ul>
+
+<!--
+<input class="form-control" type="text" placeholder="Search" list="countries" ng-model="query" />
+<datalist id="countries">
+                    <option ng-repeat="country in countries | filter:query | orderBy:'x.name'">{{country.name}}</option>
+                </datalist>
+
+<iframe src="http://stackoverflow.com/" name="iframe_a">
+<p>Your browser does not support iframes.</p>
+</iframe>
+
+<button class="btn btn-outline-success" type="submit">Search</button>
+
+-->
